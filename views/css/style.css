@@ -2,6 +2,9 @@ body{
     margin: 0;
     padding: 0;
     width: 100%; /* Ширина правой колонки */
+    position: absolute;
+    z-index: 1;
+    height: 4000px;
 }
 
 #rightcol { /* Этот слой накладывается поверх */ 
@@ -9,7 +12,7 @@ body{
     left: 1%; /* Положение от левого края */
     top: 0%; /* Положение от верхнего края */
     width: 98%; /* Ширина правой колонки */
-    height: 10%;
+    height: 60px;
     background: #696969; /* Цвет фона */
     color: #fff; /* Цвет текста */
     opacity: 0.8;
@@ -17,9 +20,10 @@ body{
     z-index: 2;
     margin: 0;
     padding: 0;
+
    }
 .fon{
-    position: absolute;
+    position: relative;
     z-index: 1;
     border: "0";
     width: 100%;
