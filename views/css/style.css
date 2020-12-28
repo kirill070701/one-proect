@@ -1,10 +1,9 @@
 body{
     margin: 0;
-    padding: 0;
     width: 100%; /* Ширина правой колонки */
-    position: absolute;
+    position: relative;
     z-index: 1;
-    height: 4000px;
+    height: 1000px;
 }
 
 #rightcol { /* Этот слой накладывается поверх */ 
@@ -20,7 +19,7 @@ body{
     z-index: 2;
     margin: 0;
     padding: 0;
-
+    
    }
 .fon{
     position: relative;
@@ -31,5 +30,6 @@ body{
     alt: "";
     margin: 0;
     padding: 0;
+    
 }
 
