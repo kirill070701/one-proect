@@ -43,13 +43,13 @@
         left: 0%;
         width: 90%;
         text-align: center;
-        /*display: flex;
+        display: flex;
         justify-content: center;
-        align-content: center;*/
+        align-content: center;
         position: relative;
         z-index: 2;
-        /*font-family: sans-serif;
-        font-weight: bold;*/
+        font-family: sans-serif;
+        font-weight: bold;
         font-size: calc(1em + 2vw);
 
     }
@@ -79,14 +79,11 @@
       }
     .mobil{
         position: relative;
-        top: -30px;
+        top: 0px;
         background: #696969;
-        margin: 0;
+        margin: -5px;
         padding: 0;
         height: 100px;
-        border-style:dotted;
-        
-
     }
 }
 
