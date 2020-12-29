@@ -1,3 +1,4 @@
+@media screen and (max-width: 800px) {
     .mobil{
         position: relative;
         top: 0px;
@@ -6,3 +7,4 @@
         padding: 0;
         height: 100px;
     }
+}
