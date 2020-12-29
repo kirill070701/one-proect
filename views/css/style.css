@@ -3,7 +3,7 @@ body{
     width: 100%; /* Ширина правой колонки */
     position: relative;
     z-index: 1;
-    height: 1000px;
+    height: 10000px;
 }
 
 .fon{

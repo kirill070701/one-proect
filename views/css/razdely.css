@@ -22,39 +22,39 @@
     -webkit-animation-delay: 0s; 
     -ms-animation-delay: 0s; 
     animation-delay: 0s;
-    left: 30%; 
+    left: 25%; 
 }
 .animated-words span:nth-child(3) { 
     -webkit-animation-delay: 5s; 
     -ms-animation-delay: 5s; 
     animation-delay: 5s;
-    left: 30%; 
+    left: 25%; 
 }
 .animated-words span:nth-child(4) { 
     -webkit-animation-delay: 10s; 
     -ms-animation-delay: 10s; 
     animation-delay: 10s; 
-    left: 30%;
+    left: 25%;
 }
 .animated-words span:nth-child(5) { 
     -webkit-animation-delay: 15s; 
     -ms-animation-delay: 15s; 
     animation-delay: 15s; 
-    left: 20%;
+    left: 15%;
 }
 
 
 .animated-words {
     display: inline-block;
-    width: 100%;
-    /*text-align: center;
+    width: 90%;
+    text-align: center;
     display: flex;
     justify-content: center;
-    align-content: center;*/
+    align-content: center;
     position: absolute;
     z-index: 2;
-    /*font-family: sans-serif;
-    font-weight: bold;*/
+    font-family: SimplerDnm;
+    font-weight: bold;
     font-size: calc(1em + 2vw);
     top: 60%;
 }
