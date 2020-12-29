@@ -13,28 +13,28 @@
         -webkit-animation-delay: 0s; 
         -ms-animation-delay: 0s; 
         animation-delay: 0s;
-        top: -10px;
+        top: 10px;
         left: 12%;
     }
     .animated-words span:nth-child(3) { 
         -webkit-animation-delay: 5s; 
         -ms-animation-delay: 5s; 
         animation-delay: 5s;
-        top: -10px;
+        top: 10px;
         left: 12%;
     }
     .animated-words span:nth-child(4) { 
         -webkit-animation-delay: 10s; 
         -ms-animation-delay: 10s; 
         animation-delay: 10s; 
-        top: -10px;
+        top: 10px;
         left: 10%;
     }
     .animated-words span:nth-child(5) { 
         -webkit-animation-delay: 15s; 
         -ms-animation-delay: 15s; 
         animation-delay: 15s; 
-        top: -10px;
+        top: 5px;
         left: 10%;
     }
 
@@ -51,7 +51,7 @@
         font-family: sans-serif;
         font-weight: bold;
         font-size: calc(1em + 2vw);
-
+        
     }
 
     #rightcol { /* Этот слой накладывается поверх */ 
