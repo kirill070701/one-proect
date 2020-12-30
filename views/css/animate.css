@@ -1,8 +1,9 @@
 #hid {
     width: 200px;
     height: 500px;
-    background: #FF0000;
+    background: #000000;
     opacity: 0;
     position: absolute;
-    top: 2000px;
+    top: 800px;
+    z-index: 3;
   }
