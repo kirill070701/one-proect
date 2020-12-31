@@ -10,7 +10,7 @@ $(document).ready(function(){
     
     $randomnbr.each(function(){
         
-      change = Math.round(Math.random()*100);
+      change = Math.round(Math.random()*400);
       $(this).attr('data-change', change);
       
     });
