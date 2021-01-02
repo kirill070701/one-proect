@@ -4,7 +4,7 @@ a {
   text-decoration: none;
   color: #00ffb4;
 }
-.glitch-btn {
+.glitch-btn { /*изменение размеров*/
   display: inline-block;
   position:relative;
 top: 200px ;
@@ -13,14 +13,16 @@ left: 20%;
   font-size: 36px;
   transition: all 0.8s cubic-bezier(0.23, 1, 0.32, 1);
   color: #afafaf;
+  /*width:50px;
+  height: 20px;*/
 }
-.glitch-btn .mask {
+.glitch-btn .mask { /*часть которая вебрирует при наведении*/
   position: absolute;
   width: 100%;
   overflow: hidden;
   display: none;
 }
-.glitch-btn .mask span {
+.glitch-btn .mask span { /*часть которая вебрирует при наведении*/
   position: absolute;
   left: 50%;
   -webkit-transform: translateX(-50%);
@@ -35,7 +37,7 @@ left: 20%;
   background: #00ffb4;
   transform: translateX(120%) scaleX(3) scaleY(0.8);
 }
-.glitch-btn:before {
+.glitch-btn:before { /*серая полоса в начале*/
   content: "";
   position: absolute;
   left: -15%;
@@ -47,7 +49,7 @@ left: 20%;
   z-index: -1;
   transition: all 0.8s cubic-bezier(0.23, 1, 0.32, 1);
 }
-.glitch-btn:after {
+.glitch-btn:after {/*зеленая полоска*/
   content: "";
   position: absolute;
   left: -5%;

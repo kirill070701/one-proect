@@ -1,12 +1,14 @@
 $(function () {
-    var element = $("#hid"), display;
+    var element = $("#hid"), displayl;
     $(window).scroll(function () {
-      display = $(this).scrollTop() >= 600;
-      display != element.css('opacity') && element.stop().animate({  'opacity': 0.5  }, 400) ;
+      displayl = $(this).scrollTop() >= 1200;
+      displayl != element.css('opacity') && element.stop().animate({  'opacity': 0.5  }, 300) ;
     });
 
   });
 
+
+  
 
 
 
