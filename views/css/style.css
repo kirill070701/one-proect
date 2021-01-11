@@ -26,7 +26,6 @@ body{
 .fon1{
     transform: translate(-50%, 0%);
     left: 60%;
-    margin: 0;
     position: relative;
     z-index: 1;
     width: 50%;
@@ -34,64 +33,15 @@ body{
     padding: 0px;
   /*clip-path: polygon(0% 0%, 100% 0%, 100% 90%, 0% 100%);*/
 }
-.strip{
-    position: absolute;
-    width: 35%;
-    transform: translate(-100%, 0%);
-    left: 100%;
-    background: #706e6e;
-    height:100%;
-    margin:0;
-    padding: 0;
-    z-index: 0;
-}
-.ferst_selection{
-    /*margin: 50px 0px 0px 0px; /*изменить при готовой странице*/
+.fon2{
     position: relative;
-    width:100%;
-    height: 100%; /*изменить при готовой странице*/
-    /*border-style: solid;*/
-    z-index: 1;
-}
-.animated_button{
-    transform: translate(-50%, -50%);
-    top: 50%;
-    left: 30%;
-    position: absolute;
-    width: 30%;
-    height: 50%; /*изменить при готовой странице*/
-    /*border-style: solid;*/
-    z-index: 2;
-    background: #010038;
-    border-radius: 20px;
-    padding: 0%;
-}
-.input1{
-    position: relative;
-    width: 100%;
-    height:100%;
-    color:white;
-    outline: none;
-    background: transparent;
-    border-radius: 20px;
-    font-family: "SimplerDnm1";
-    font-size: 150%;
-    word-break: break-all;
-}
-.animated_button:hover{
-    transition: 0.7s;
-    height: 70%;
-}
-.animated_button:not(:hover){
-    transition:0.7s;
+    width: 50%;
+    transform: translate(-50%, 0%);
+    left: 60%;
+    margin: 0px;
+    padding: 0px;
 }
 
-.otstup{
-    position: relative;
-    width:100%;
-    height: 100px;/*изменить при готовой странице на проценты*/
-    z-index: 0;
-}
 
 
 /*.fon2{
@@ -107,11 +57,7 @@ body{
     padding: 0;
 /*clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 90%);
 }*/
-.a{
-    width: 100%;
-    position: relative;
-    height:100%;
-}
+
 /*.b{
     position: relative;
 }*/
@@ -180,8 +126,19 @@ body{
     box-shadow: 0 0 5px;
 }
 
+.otstup2{
+    position: relative;
+    width: 100%;
+    height: 10vw;
+    background: white;
+}
 
-
+.basement{
+    position: relative;
+    width: 100%;
+    height: 20vw;
+    background: black;
+}
 
 
 
