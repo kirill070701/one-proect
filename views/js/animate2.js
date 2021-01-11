@@ -1,7 +1,7 @@
 $(function () {
   var element = $(".temaone"), displayq;
   $(window).scroll(function () {
-    displayq = $(this).scrollTop() >= 100;
+    displayq = $(this).scrollTop() >= 150;
     displayq != element.css('opacity') && element.stop().animate({  'opacity': 1  }, 200) ;
   });
 });
@@ -9,7 +9,7 @@ $(function () {
 $(function () {
   var element = $(".tematwo"), displayq;
   $(window).scroll(function () {
-    displayq = $(this).scrollTop() >= 100;
+    displayq = $(this).scrollTop() >= 150;
     displayq != element.css('opacity') && element.stop().animate({  'opacity': 1  }, 300) ;
   });
 });
@@ -18,7 +18,7 @@ $(function () {
 $(function () {
   var element = $(".temathree"), displayq;
   $(window).scroll(function () {
-    displayq = $(this).scrollTop() >= 100;
+    displayq = $(this).scrollTop() >= 150;
     displayq != element.css('opacity') && element.stop().animate({  'opacity': 1  }, 400) ;
   });
 });
@@ -26,7 +26,7 @@ $(function () {
 $(function () {
   var element = $(".temafour"), displayq;
   $(window).scroll(function () {
-    displayq = $(this).scrollTop() >= 100;
+    displayq = $(this).scrollTop() >= 150;
     displayq != element.css('opacity') && element.stop().animate({  'opacity': 1  }, 500) ;
   });
 });
