@@ -63,6 +63,8 @@ body{
     /*border-style: solid;*/
     z-index: 2;
     background: #010038;
+    border-radius: 20px;
+    padding: 0%;
 }
 .input1{
     position: relative;
@@ -71,10 +73,14 @@ body{
     color:white;
     outline: none;
     background: transparent;
+    border-radius: 20px;
+    font-family: "SimplerDnm1";
+    font-size: 150%;
+    word-break: break-all;
 }
 .animated_button:hover{
     transition: 0.7s;
-    height: 80%;
+    height: 70%;
 }
 .animated_button:not(:hover){
     transition:0.7s;
@@ -126,7 +132,7 @@ body{
     height: 100%;
     top: 49%;
     z-index: 0;
-
+    
 }
 .temaone {
     background: #404040;
@@ -135,6 +141,7 @@ body{
     height: 28%;
     top: 4%;
     opacity: 0;
+    box-shadow: 0 0 10px;
 }
 .tematwo{
     background: #404040;
@@ -143,6 +150,7 @@ body{
     height: 28%;
     top: 8%;
     opacity: 0;
+    box-shadow: 0 0 5px;
 }
 .temathree{
     background:#404040;
@@ -151,6 +159,7 @@ body{
     height: 28%;
     top: 12%;
     opacity: 0;
+    box-shadow: 0 0 5px;
 }
 
 .twocolumn{
@@ -168,6 +177,7 @@ body{
     height: 92%;
     background: #404040;
     opacity: 0;
+    box-shadow: 0 0 5px;
 }
 
 

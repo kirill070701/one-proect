@@ -2,3 +2,8 @@
 	font-family: 'SimplerDnm'; 
 	src: url(../shrift/a_SimplerDnm.ttf); 
 }
+
+@font-face {
+	font-family: 'SimplerDnm1'; 
+	src: url(../shrift/a_SimplerDnm1.ttf); 
+}
