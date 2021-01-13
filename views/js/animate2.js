@@ -7,44 +7,63 @@ $(document).ready( function() {
     }
     // и потом если нужен код только для телефона:
     if (isMobile) {
+      let x = document.querySelector(".temaone")
+      setTimeout(function(){
+        x.style.animation = "fade 1s";
+        x.style.opacity = "1"
+      },500)
+
+      let y = document.querySelector(".tematwo")
+      setTimeout(function(){
+        y.style.animation = "fade 1s";
+        y.style.opacity = "1"
+      },500)
+
+      let z = document.querySelector(".temathree")
+      setTimeout(function(){
+        z.style.animation = "fade 1s";
+        z.style.opacity = "1"
+      },500)
+
+      let t = document.querySelector(".temafour_mobil")
+      setTimeout(function(){
+        t.style.animation = "fade 1s";
+        t.style.opacity = "1"
+      },500)
+
+
+
+
+
       $(function () {
-        var element = $(".temaone"), displayq;
+        var element = $(".ferst_selection"), displayq;
         $(window).scroll(function () {
-          displayq = $(this).scrollTop() >= 150;
-          displayq != element.css('opacity') && element.stop().animate({  'opacity': 1  }, 200) ;
+          displayq = $(this).scrollTop() >= 300;
+          displayq != element.css('opacity') && element.stop().animate({  'opacity': 1  }, 450) ;
         });
       });
       
       $(function () {
-        var element = $(".tematwo"), displayq;
+        var element = $(".second_selection"), displayq;
         $(window).scroll(function () {
-          displayq = $(this).scrollTop() >= 150;
-          displayq != element.css('opacity') && element.stop().animate({  'opacity': 1  }, 300) ;
-        });
-      });
-      
-      
-      $(function () {
-        var element = $(".temathree"), displayq;
-        $(window).scroll(function () {
-          displayq = $(this).scrollTop() >= 150;
-          displayq != element.css('opacity') && element.stop().animate({  'opacity': 1  }, 400) ;
+          displayq = $(this).scrollTop() >= 450;
+          displayq != element.css('opacity') && element.stop().animate({  'opacity': 1  }, 450) ;
         });
       });
       
       $(function () {
-        var element = $(".temafour"), displayq;
+        var element = $(".third_selection"), displayq;
         $(window).scroll(function () {
-          displayq = $(this).scrollTop() >= 150;
-          displayq != element.css('opacity') && element.stop().animate({  'opacity': 1  }, 500) ;
+          displayq = $(this).scrollTop() >= 750;
+          displayq != element.css('opacity') && element.stop().animate({  'opacity': 1  }, 450) ;
         });
       });
       
       $(function () {
-        var element = $(".temafour_mobil"), displayq;
+        var element = $(".fourth_selection"), displayq;
         $(window).scroll(function () {
-          displayq = $(this).scrollTop() >= 100;
-          displayq != element.css('opacity') && element.stop().animate({  'opacity': 1  }, 500) ;
+          displayq = $(this).scrollTop() >= 850;
+          displayq != element.css('opacity') && element.stop().animate({  'opacity': 1  }, 450) ;
         });
       });
 
@@ -90,13 +109,7 @@ $(function () {
   });
 });
 
-$(function () {
-  var element = $(".temafour_mobil"), displayq;
-  $(window).scroll(function () {
-    displayq = $(this).scrollTop() >= 100;
-    displayq != element.css('opacity') && element.stop().animate({  'opacity': 1  }, 500) ;
-  });
-});
+
 
 $(function () {
   var element = $(".ferst_selection"), displayq;

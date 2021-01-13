@@ -66,7 +66,7 @@
 .otstup{
     position: relative;
     width:100%;
-    height: 100px;/*изменить при готовой странице на проценты*/
+    height: 7.5vw;/*изменить при готовой странице на проценты*/
     z-index: 0;
 }
 
@@ -89,8 +89,3 @@
     background: #706e6e;
 }
 
-@media screen and (max-width: 600px) {
-    .ferst_selection, .second_selection, .third_selection{
-        opacity: 1;
-    }
-}

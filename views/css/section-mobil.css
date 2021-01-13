@@ -1,0 +1,115 @@
+@media screen and (max-width: 600px) {
+    .a{
+        width: 100%;
+        height:100%;
+        position: relative;
+    }
+    .right_strip, .left_strip{
+        position: relative;
+        width: 100%;
+        height:100%;
+    }
+    
+    /*первая секция*/
+    .strip{
+        position: absolute;
+        width: 35%;
+        transform: translate(-100%, 0%);
+        left: 100%;
+        background: #706e6e;
+        height:100%;
+        margin:0;
+        padding: 0;
+        z-index: 0;
+    }
+    .ferst_selection, .second_selection, .third_selection, .fourth_selection{
+        /*margin: 50px 0px 0px 0px; /*изменить при готовой странице*/
+        position: relative;
+        width:100%;
+        height: 100%; /*изменить при готовой странице*/
+        /*border-style: solid;*/
+        z-index: 1;
+        opacity: 0;
+    }
+
+    .fon2{
+        position: relative;
+        width: 70%;
+        transform: translate(-50%, 0%);
+        left: 55%;
+        margin: 0px;
+        padding: 0px;
+    }
+
+    .animated_button, .animated_button2, .animated_button3, .animated_button4{
+        transform: translate(-50%, -50%);
+        top: 50%;
+        left: 17%;
+        position: absolute;
+        width: 33%;
+        height: 50%; /*изменить при готовой странице*/
+        /*border-style: solid;*/
+        z-index: 2;
+        background: #010038;
+        border-radius: 20px;
+        padding: 0%;
+    }
+    .input1, .input2, .input3, .input4 {
+        position: relative;
+        width: 100%;
+        height:100%;
+        color:white;
+        outline: none;
+        background: transparent;
+        border-radius: 20px;
+        font-family: "SimplerDnm1";
+
+        word-break: break-all;
+    }
+    .input1{
+        font-size: 2.9vw;
+    }
+    .input2{
+        font-size: 3.4vw;
+    }
+    .input3{
+        font-size: 2.8vw;
+    }
+    .input4{
+        font-size: 2.3vw;
+    }
+    
+    .otstup{
+        position: relative;
+        width:100%;
+        height: 7.5vw;/*изменить при готовой странице на проценты*/
+        z-index: 0;
+    }
+    
+    /*вторая секция*/
+    
+    /*средняя линия*/
+    .transition_strip{
+        position: relative;
+        width: 100%;
+        height: 12vw ;
+        background: #706e6e;
+        margin: -5vw 0 0 0;
+        z-index: -1;
+    }
+    /*левая полоса*/
+    .strip1{
+        position: absolute;
+        width: 33%;
+        height: 100%;
+        background: #706e6e;
+    }
+
+
+
+
+
+
+
+
+}
