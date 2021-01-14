@@ -9,12 +9,20 @@ const urlecodedParser = bodyParser.urlencoded({extended: false})
 
 app.use(express.static(__dirname + '/views'))
 
+app.set("view engine", "ejs")
+
 app.get('/', urlecodedParser, (req, res)=>{
-    res.sendFile('/index.html')
+    res.render('index')
 })
 
-app.post('/', urlecodedParser, (req, res)=>{
-    
+app.post('/gaming-industry', (req,res)=>{
+    res.render('gaming-industry')
+    //res.render('head')
+})
+app.get('/gaming-industry', (req,res)=>{
+    console.log("ok")
+    res.render('gaming-industry')
+    //res.render('head')
 })
 
 

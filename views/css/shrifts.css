@@ -7,3 +7,8 @@
 	font-family: 'SimplerDnm1'; 
 	src: url(../shrift/a_SimplerDnm1.ttf); 
 }
+
+@font-face {
+	font-family: 'a_AvanteLt_LightItalic'; 
+	src: url(../shrift/a_AvanteLt_LightItalic.ttf); 
+}

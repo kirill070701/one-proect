@@ -8,7 +8,6 @@
     <link rel="stylesheet" type="text/css" href="/css/fon-dly-razdelov-mobil.css">
     <link rel="stylesheet" type="text/css" href="/css/razdel-mobil.css">
     <link rel="stylesheet" type="text/css" href="/css/shrifts.css">
-    <link rel="stylesheet" type="text/css" href="/css/animate.css">
     <link rel="stylesheet" type="text/css" href="/css/section.css">
     <link rel="stylesheet" type="text/css" href="/css/style-mabil.css">
     <link rel="stylesheet" type="text/css" href="/css/section-mobil.css">
@@ -17,18 +16,8 @@
 </head>
 <body>
     
-    <div id="rightcol">
-        <div class="content">
-            <div class="random"><span class="nbr ltr">0</span><span class="nbr ltr">0</span><span class="nbr ltr">0</span><span class="nbr ltr">0</span><span class="nbr ltr">0</span></span>
-              <span class="nbr ltr">0</span><span class="nbr ltr">0</span><span class="nbr ltr">0</span><span class="nbr ltr">0</span><span class="nbr ltr">0</span> <span class="nbr ltr">0</span><span class="nbr ltr">0</span></div>
-         
-          
-          </div>
-          <script src='https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js'></script>
-          <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
-        
-          <script src="js/logotip.js"></script>
-    </div>
+    
+    <%- include('head'); -%> 
     
     <div class="foto">
         <img class="fon" src="foto/fon.jpg">
@@ -63,7 +52,7 @@
             <div class="strip"></div>
             <div class="otstup"></div>
             <div class="ferst_selection">
-                <form action="/" method="GET" class="animated_button">
+                <form action="/gaming-industry" method="POST" class="animated_button">
                     <input type="submit" class="input1" value="игровая индустрия">
                 </form>
                 <img class="fon2" src="foto/fon1.jpg">
@@ -103,10 +92,8 @@
     <div class="otstup2">
         
     </div>
-    <div class="basement">
-        <!-- подвал-->
-    </div>
-
+    
+    <%- include('basement'); -%> 
     
         
 
