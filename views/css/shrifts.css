@@ -12,3 +12,11 @@
 	font-family: 'a_AvanteLt_LightItalic'; 
 	src: url(../shrift/a_AvanteLt_LightItalic.ttf); 
 }
+@font-face {
+	font-family: 'name'; 
+	src: url(../shrift/name.ttf); 
+}
+@font-face {
+	font-family: 'discription'; 
+	src: url(../shrift/discription.ttf); 
+}
