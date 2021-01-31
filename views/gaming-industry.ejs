@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="/css/gaming-industry/style-mobil.css">
     <link rel="stylesheet" href="/css/gaming-industry/article.css">
     <link rel="stylesheet" href="/css/basement.css">
+    <link rel="stylesheet" href="/css/gaming-industry/strip-pages.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>New Game Pro</title>
 </head>
@@ -23,10 +24,8 @@
         <div class="column">
             <div class="left_column">
                 <!--*********-->
-                
-                    
                     <% var j = results.length%>
-                    <%for(var i=j-1; i>0; i--){ %>
+                    <%for(var i=0 +((Number.parseInt(p))*10); i<j; i++){ %>
                         <form action="/gaming-industry/<%=results[i]._id%>" method="get">
                             <div class="record">
                                 <% var id = results[i]._id%>
@@ -38,14 +37,22 @@
                             </div>
                         </form>
                     <%}%>
-                    
-                
-                
-                
             </div>
             <div class="right_column"></div>
         </div>
     </div>
+
+    <%var i = Number.parseInt(p) + 1%>
+    <%var a = "/gaming-industry/?&p=" + i %>
+    <div class="block-page"><span class="span">Продолжить</span><a href="<%=a%>" class="page"></a></div>
+    <%if(p >0){%>
+        <%i = p - 1%>
+        <%var a = "/gaming-industry/?&p=" + i %>
+        <div class="nazad"><span class="span">Назад</span><a href="<%=a%>" class="page"></a></div>
+        
+    <%}%>
+
+    <%- include('basement'); -%>
     <script src="http://code.jquery.com/jquery-latest.min.js" type="text/javascript"></script>
 </body>
 </html>
