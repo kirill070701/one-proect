@@ -3,15 +3,47 @@
 <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" type="text/css" href="/css/logotip.css">
-    <!--<link rel="stylesheet" type="text/css" href="/css/gaming-industry/style.css">-->
+    
     <link rel="stylesheet" type="text/css" href="/css/shrifts.css">
     <link rel="stylesheet" type="text/css" href=" /css/layour/style.css">
+    <link rel="stylesheet" href="/css/layour/basis.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title><%= results[0].title%></title>
 </head>
 <body>
     <%- include('head'); -%>
+    <script src="/socket.io/socket.io.js"></script>
     <div class="indent_under_header"></div>
-    <div class="otstup"></div>
+    <div class="button"></div>
+    <div class="back"></div> <!--шаг назад-->
+    <div class="basis">
+        <div class="news">
+            <div class="name"><h2 class= "nameh2"><%= results[0].title%></h2></div>
+            <img src="data:image/gif;base64,<%=results[0].picture%>" class="img"/>
+            <div class="dscription"><p class="p"><%= results[0].dscription%></p></div>
+            <div class="strip">
+                <div class="share">
+                    <p class="p1">Поделиться:</p>
+                </div>
+                <div class="publication">
+                    <p class="timePublication"><%= results[0].timePublication%></p>
+                </div>
+            </div>
+
+        </div>
+        
+
+    <script>
+      var socket = io();
+
+      socket.on('one', function(msg) {
+        console.log(msg)
+  });
+            </script>
+        </div>
+    </div>
+
+<!--
+    <div class="otstup"></div>-->
 </body>
 </html> 
