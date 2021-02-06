@@ -85,3 +85,9 @@
     margin: 0.8vh;
     margin-left: 0px;
 }
+
+#imgElem, #imgElem1, #imgElem2 {
+    position: relative;
+    float:left;
+    width: 33%;
+}

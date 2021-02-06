@@ -17,8 +17,11 @@ module.exports = {
             
                     dbo.collection("students").find({}).sort({_id:-1}).limit(3).toArray((err, results)=>{ 
                         console.log("ok")
-                        module.exports = { results: results}
-                        socket.emit('one', results);
+                        var a = [{"one": String(results[0].picture), "two": results[0].title},
+                            {"one": String(results[1].picture), "two": results[1].title},
+                            {"one": String(results[2].picture), "two": results[2].title}]
+                    
+                        socket.emit('one', a);
                         console.log("socket ok")
                     })
                     db.close()

@@ -31,15 +31,26 @@
 
         </div>
         <div class="also">
-            <div>
-                <img style='display:block' id='base64image'>
+            <div class="news">
+                <div>
+                    <img id="imgElem"/>
+                </div>
+                <div>
+                    <img id="imgElem1"/>
+                </div>
+                <div>
+                    <img id="imgElem2"/>
+                </div>
+                
             </div>
             <script>
                 var socket = io();
   
                 socket.on('one', function(msg) {
-                    console.log(msg[0])
-                    //document.getElementById("min").innerHTML = msg
+                    console.log(msg)
+                    imgElem.setAttribute('src', "data:image/jpg;base64," + `${msg[0].one}`);
+                    imgElem1.setAttribute('src', "data:image/jpg;base64," + `${msg[1].one}`);
+                    imgElem2.setAttribute('src', "data:image/jpg;base64," + `${msg[2].one}`);
                 });
                 
             </script>

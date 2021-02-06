@@ -8,9 +8,7 @@ const http = require('http').Server(app);
 const io = require('socket.io')(http);
 const port = process.env.port || 3000
 
-http.listen(port, ()=>{
-    console.log(`Port- ${port}`)
-})
+
 
 const urlecodedParser = bodyParser.urlencoded({extended: false})
 
@@ -31,3 +29,6 @@ app.use(layout)
 
 socket.start(io)
 
+http.listen(port, ()=>{
+    console.log(`Port- ${port}`)
+})

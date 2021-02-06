@@ -13,17 +13,9 @@ app.get('/gaming-industry/:id', (req, res)=>{
         if(err) throw err;
         var dbo = db.db("newdb")
         dbo.collection("students").find({_id: Number.parseInt(req.params['id'])}).toArray((err, results)=>{  
-            res.render('layour', {results: results})  
+            res.render('layour', {results: results}) 
             
         })
-
-
-        dbo.collection("students").find({}).sort({_id:-1}).limit(3).toArray((err, results)=>{ 
-            console.log("ok")
-            module.exports = { results: results}
-
-            
-         })
 
         db.close()
     })
