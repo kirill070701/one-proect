@@ -8,6 +8,10 @@ const http = require('http').Server(app);
 const io = require('socket.io')(http);
 const port = process.env.port || 3000
 
+http.listen(port, ()=>{
+    console.log(`Port- ${port}`)
+})
+
 const urlecodedParser = bodyParser.urlencoded({extended: false})
 
 app.use(express.static(__dirname + '/views'))
@@ -16,12 +20,14 @@ app.use(gameind)
 
 app.set("view engine", "ejs")
 
+
 app.get('/', urlecodedParser, (req, res)=>{
     res.render('index')
-    socket.so("asde")
+   
 })
 app.use(layout)
 
-http.listen(port, ()=>{
-    console.log(`Port- ${port}`)
-})
+
+
+socket.start(io)
+

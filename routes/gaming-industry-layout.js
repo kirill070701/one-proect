@@ -1,8 +1,9 @@
 const express = require('express')
 const app = express()
+const socket = require('../views/js/socket')
 const http = require('http').Server(app);
 const io = require('socket.io')(http);
-var socket = require('../views/js/socket')(io)
+
 
 app.get('/gaming-industry/:id', (req, res)=>{
     const url = 'mongodb+srv://Admin:159963357741@cluster0.mjotf.mongodb.net/statie'
@@ -19,7 +20,9 @@ app.get('/gaming-industry/:id', (req, res)=>{
 
         dbo.collection("students").find({}).sort({_id:-1}).limit(3).toArray((err, results)=>{ 
             console.log("ok")
-            socket
+            module.exports = { results: results}
+
+            
          })
 
         db.close()
@@ -27,3 +30,4 @@ app.get('/gaming-industry/:id', (req, res)=>{
 })
 
 module.exports = app
+
