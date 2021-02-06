@@ -3,7 +3,6 @@
 <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" type="text/css" href="/css/logotip.css">
-    
     <link rel="stylesheet" type="text/css" href="/css/shrifts.css">
     <link rel="stylesheet" type="text/css" href=" /css/layour/style.css">
     <link rel="stylesheet" href="/css/layour/basis.css">
@@ -31,19 +30,25 @@
             </div>
 
         </div>
-        
-
-    <script>
-      var socket = io();
-
-      socket.on('one', function(msg) {
-        console.log(msg)
-        //document.getElementById("min").innerHTML = msg
-  });
+        <div class="also">
+            <div>
+                <img style='display:block' id='base64image'>
+            </div>
+            <script>
+                var socket = io();
   
-            
+                socket.on('one', function(msg) {
+                    console.log(msg[0])
+                    //document.getElementById("min").innerHTML = msg
+                });
+                
             </script>
-            <p id="p"></p>
+            
+            <div></div>
+            <div></div>
+        </div>
+
+    
         </div>
     </div>
 
