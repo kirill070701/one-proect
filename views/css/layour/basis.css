@@ -2,7 +2,7 @@
     position: relative;
     overflow: hidden;
     background: rgb(27, 27, 27);
-    width: 80vw;
+    width: 80%;
     transform: translate(-50%, 0%);
     left: 50%;
 }
@@ -32,7 +32,7 @@
 }
 .name{
     position: relative;
-    font-size: 2.5vw;
+    font-size: 3vh;
     font-family: name;
     padding: 0.5vw;
     padding-left: 2vw;
@@ -60,11 +60,16 @@
 .share{
     position: relative;
     padding-left: 2vw;
+    overflow: hidden;
+    float: left;
 }
 
 .publication{
     position: relative;
     padding-right: 2vw;
+    overflow: hidden;
+    width:45%;
+    float:right
 }
 
 .p1{
@@ -86,8 +91,73 @@
     margin-left: 0px;
 }
 
+.also{
+    position: relative;
+    background: rgb(49, 49, 49);
+    width: 85%;
+    left: 7.5%;
+    overflow: hidden;
+}
+.alsoElem{
+    position: relative;
+    padding: 0px;
+    margin: 0px;
+    padding-left: 2vw;
+    padding-right: 2vw;
+    
+}
+
+.alsoh2{
+    position: relative;
+    font-family: dscription;
+    color: white;
+    font-size: 3vh;
+    margin: 0.8vw;
+}
+.elements{
+    position: relative;
+    overflow: hidden;
+    width: calc(100% - 4vw);
+    padding-left: 2vw;
+    padding-right: 2vw;
+}
+
 #imgElem, #imgElem1, #imgElem2 {
     position: relative;
-    float:left;
-    width: 33%;
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
 }
+
+.name1{
+    position: relative;
+    color: white;
+    margin: 0px;
+    padding-top: 1vw;
+    font-size: 2vw;
+    font-family: dscription;
+}
+
+.elem, .elem1, .elem2{
+    position: relative;
+    width: 32.5%;
+    overflow: hidden;
+
+}
+.elem{
+    float: left;
+}
+.elem1{
+    transform: translate(-50%, 0%);
+    left: 17.5%;
+    float: left;
+}
+.elem2{
+    float: right;
+}
+.nameElem, .nameElem1, .nameElem2{
+    position: relative;
+    
+    z-index: 3;
+}
+

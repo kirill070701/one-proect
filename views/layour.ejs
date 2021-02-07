@@ -5,8 +5,9 @@
     <link rel="stylesheet" type="text/css" href="/css/logotip.css">
     <link rel="stylesheet" type="text/css" href="/css/shrifts.css">
     <link rel="stylesheet" type="text/css" href=" /css/layour/style.css">
-    <link rel="stylesheet" href="/css/layour/basis.css">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="/css/layour/basis.css">
+    <link rel="stylesheet" type="text/css" href="/css/layour/basis-mobile.css">
+    <meta name="viewport"  content="width=device-width, initial-scale=1.0">
     <title><%= results[0].title%></title>
 </head>
 <body>
@@ -19,7 +20,7 @@
         <div class="news">
             <div class="name"><h2 class= "nameh2"><%= results[0].title%></h2></div>
             <img src="data:image/gif;base64,<%=results[0].picture%>" class="img"/>
-            <div class="dscription"><p class="p"><%= results[0].dscription%></p></div>
+            <div class="dscription"><p class="p" align="justify"><%= results[0].dscription%></p></div>
             <div class="strip">
                 <div class="share">
                     <p class="p1">Поделиться:</p>
@@ -31,39 +32,47 @@
 
         </div>
         <div class="also">
-            <div class="news">
-                <div>
-                    <img id="imgElem"/>
-                </div>
-                <div>
-                    <img id="imgElem1"/>
-                </div>
-                <div>
-                    <img id="imgElem2"/>
-                </div>
-                
-            </div>
-            <script>
-                var socket = io();
-  
-                socket.on('one', function(msg) {
-                    console.log(msg)
-                    imgElem.setAttribute('src', "data:image/jpg;base64," + `${msg[0].one}`);
-                    imgElem1.setAttribute('src', "data:image/jpg;base64," + `${msg[1].one}`);
-                    imgElem2.setAttribute('src', "data:image/jpg;base64," + `${msg[2].one}`);
-                });
-                
-            </script>
+            <div class="alsoElem"><h2 class="alsoh2">А так же:</h2></div>
             
-            <div></div>
-            <div></div>
+            <div class="elements"> 
+            <div class="elem">
+                <img id="imgElem"/>
+                <div class="name1">
+                    <a id="nameElem" ></a>
+                </div>
+            </div>
+            <div class="elem1">
+                <img id="imgElem1"/>
+                <div class="name1">
+                    <a id="nameElem1" src="/"></a>
+                </div>
+            </div>
+            <div class="elem2">
+                <img id="imgElem2"/>
+                <div class="name1">
+                    <a id="nameElem2" src=""></a>
+                </div>
+            </div>
+        </div>
+            
         </div>
 
-    
-        </div>
     </div>
 
-<!--
-    <div class="otstup"></div>-->
+<script>
+    var socket = io();
+
+socket.on('one', function(msg) {
+    console.log(msg)
+    nameElem.setAttribute('src', "/")
+    imgElem.setAttribute('src', "data:image/jpg;base64," + `${msg[0].one}`);
+    document.getElementById("nameElem").innerHTML = msg[0].two
+    imgElem1.setAttribute('src', "data:image/jpg;base64," + `${msg[1].one}`);
+    document.getElementById("nameElem1").innerHTML = msg[1].two
+    imgElem2.setAttribute('src', "data:image/jpg;base64," + `${msg[2].one}`);
+    document.getElementById("nameElem2").innerHTML = msg[2].two
+});
+</script>
+
 </body>
 </html> 
