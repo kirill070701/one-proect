@@ -157,7 +157,6 @@
 }
 .nameElem, .nameElem1, .nameElem2{
     position: relative;
-    
     z-index: 3;
 }
 

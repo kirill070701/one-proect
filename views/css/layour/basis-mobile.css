@@ -17,13 +17,16 @@
     }
     .name{
         position: relative;
-        font-size: 3vh;
+        font-size: 2vh;
         font-family: name;
         padding: 0.5vw;
         padding-top: 2vw;
         padding-left: 2vw;
         margin: 0px;
         color: white;
+    }
+    .dscription{
+        font-size: 5vw;
     }
     .share{
         position: relative;
@@ -66,7 +69,6 @@
         margin: 0px;
         padding-left: 2vw;
         padding-right: 2vw;
-        
     }
     .alsoh2{
         position: relative;
@@ -75,6 +77,7 @@
         font-size: 3vh;
         margin: 0.8vw;
     }
+  
     .elem, .elem1, .elem2{
         transform: translate(0%, 0%);
         left: 0%;
@@ -82,10 +85,13 @@
         width: 100%;
         overflow: hidden;
         float: none;
+        display: inline-block;
+
+
     }
     #imgElem, #imgElem1, #imgElem2 {
-        position: relative;
         transform: translate(-50%, 0%);
+        z-index: 0;
         left: 50%;
         width: 90%;
         margin: 0px;
@@ -106,19 +112,33 @@
         font-size: 2.5vh;
         margin: 0.8vw;
     }
+
     .name1{
-        position: relative;
+        position: absolute;
         color: white;
         margin-top: -1.5vw;
-        padding: 0px;
-        font-size: 3vh;
+        font-size: 2vh;
         font-family: dscription;
+        z-index: 1;
+        padding: 0vh 0vh 0.5vh 7vw;
+        transform: translate(0%, -100%);
+        top: 100%;
+        width: 90%;
     }
     #nameElem, #nameElem1, #nameElem2{
-    position: relative;
-    margin: 1vh;
-    padding: 0px;
-    margin-bottom: 1.5vh;
-
-}
+        position: relative;
+    }
+   .backgroundName{
+        transform: translate(-50%, 0%);
+        left: 50%;
+        position: absolute;
+        z-index: 1;
+        height: 100%;
+        background: linear-gradient(to top, #000000 0%, #fff0 76%);
+        transform: translate(-50%, 0%);
+        left: 50%;
+        width: 90%;
+        margin: 0px;
+        padding: 0px;
+    }
 }
