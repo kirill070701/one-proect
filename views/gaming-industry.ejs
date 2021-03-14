@@ -5,18 +5,18 @@
     <link rel="stylesheet" type="text/css" href="/css/logotip.css">
     <link rel="stylesheet" type="text/css" href="/css/gaming-industry/style.css">
     <link rel="stylesheet" type="text/css" href="/css/shrifts.css">
-    <link rel="stylesheet" href="/css/gaming-industry/style-mobil.css">
     <link rel="stylesheet" href="/css/gaming-industry/article.css">
     <link rel="stylesheet" href="/css/basement.css">
+    <link rel="stylesheet" href="/css/gaming-industry/style-mobil.css">
     <link rel="stylesheet" href="/css/gaming-industry/strip-pages.css">
+    <link rel="stylesheet" href="/css/gaming-industry/section-button.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>New Game Pro</title>
 </head>
 <body>
     <%- include('head'); -%>
     <div class="indent_under_header"></div>
-
-    <div class="button"></div>
+    <%- include('section-button'); -%>
     <div class="list_news">
         <div class="news">
             <h1 class="news_h1">Новости</h1>
@@ -32,7 +32,7 @@
                                 <input type="submit" id="submit" class="transparent" value=" ">
                                 <div class="name"><h2><%= results[i].title%></h2></div>
                                 <div class="image"><img src="data:image/gif;base64,<%=results[i].picture%>" class="img"/></div>
-                                <div class="dscription"><p><%= results[i].dscription%></p></div>
+                                <div class="dscription"><p align="justify"><%= results[i].dscription%></p></div>
                                 <div class="timePublication"><p class="time"><%= results[i].timePublication%></p></div>
                             </div>
                         </form>

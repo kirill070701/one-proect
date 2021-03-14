@@ -25,8 +25,6 @@ app.get('/', urlecodedParser, (req, res)=>{
 })
 app.use(layout)
 
-
-
 socket.start(io)
 
 http.listen(port, ()=>{

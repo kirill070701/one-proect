@@ -7,6 +7,7 @@
     <link rel="stylesheet" type="text/css" href=" /css/layour/style.css">
     <link rel="stylesheet" type="text/css" href="/css/layour/basis.css">
     <link rel="stylesheet" type="text/css" href="/css/layour/basis-mobile.css">
+    <link rel="stylesheet" href="/css/gaming-industry/section-button.css">
     <meta name="viewport"  content="width=device-width, initial-scale=1.0">
     <title><%= results[0].title%></title>
 </head>
@@ -14,7 +15,7 @@
     <%- include('head'); -%>
     <script src="/socket.io/socket.io.js"></script>
     <div class="indent_under_header"></div>
-    <div class="button"></div>
+    <%- include('section-button'); -%>
     <div class="back"></div> <!--шаг назад-->
     <div class="basis">
         <div class="news">
@@ -35,28 +36,37 @@
             <div class="alsoElem"><h2 class="alsoh2">А так же:</h2></div>
             
             <div class="elements">
-                
+
                 <div class="elem">
-                    <div class="backgroundName"></div> 
-                    <img id="imgElem">
-                    <div class="name1">
-                        <a id="nameElem" ></a>
-                    </div>
-                    
+                    <form action="" method="get" name="form">
+                        <input type="submit" class="transparent" value=" ">
+                        <div class="backgroundName"></div> 
+                        <img id="imgElem">
+                        <div class="name1">
+                            <a id="nameElem" ></a>
+                        </div>
+                    </form>
                 </div>
                 <div class="elem1">
-                    <div class="backgroundName"></div>
-                    <img id="imgElem1"/>
-                    <div class="name1">
-                        <a id="nameElem1" align="justify"></a>
-                    </div>
+                    <form action="" method="get" name="form1">
+                        <input type="submit" class="transparent" value=" ">
+                        <div class="backgroundName"></div>
+                        <img id="imgElem1"/>
+                        <div class="name1">
+                            <a id="nameElem1" align="justify"></a>
+                        </div>
+                    </form>
                 </div>
+                
                 <div class="elem2">
-                    <div class="backgroundName"></div>
-                    <img id="imgElem2"/>
-                    <div class="name1">
-                        <a id="nameElem2" align="justify"></a>
-                    </div>
+                    <form action="" method="get" name="form2">
+                        <input type="submit" class="transparent" value=" ">
+                        <div class="backgroundName"></div>
+                        <img id="imgElem2"/>
+                        <div class="name1">
+                            <a id="nameElem2" align="justify"></a>
+                        </div>
+                    </form>
                 </div>
             </div>
             
@@ -70,12 +80,15 @@
 socket.on('one', function(msg) {
     console.log(msg)
     nameElem.setAttribute('src', "/")
-    imgElem.setAttribute('src', "data:image/jpg;base64," + `${msg[0].one}`);
-    document.getElementById("nameElem").innerHTML = msg[0].two
-    imgElem1.setAttribute('src', "data:image/jpg;base64," + `${msg[1].one}`);
-    document.getElementById("nameElem1").innerHTML = msg[1].two
-    imgElem2.setAttribute('src', "data:image/jpg;base64," + `${msg[2].one}`);
-    document.getElementById("nameElem2").innerHTML = msg[2].two
+    document.form.action = msg[0].id 
+    imgElem.setAttribute('src', "data:image/jpg;base64," + `${msg[0].image}`);
+    document.getElementById("nameElem").innerHTML = msg[0].name
+    document.form1.action = msg[1].id 
+    imgElem1.setAttribute('src', "data:image/jpg;base64," + `${msg[1].image}`);
+    document.getElementById("nameElem1").innerHTML = msg[1].name
+    document.form2.action = msg[2].id 
+    imgElem2.setAttribute('src', "data:image/jpg;base64," + `${msg[2].image}`);
+    document.getElementById("nameElem2").innerHTML = msg[2].name
 });
 </script>
 

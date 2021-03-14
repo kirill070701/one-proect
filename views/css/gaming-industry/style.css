@@ -25,11 +25,13 @@ body, html{
 .news{
     position: relative;
     width: 100%;
-    height: 80px;
     background: #202020;
 }
 
 .news_h1{
+    padding-top: 1.5vh;
+    padding-bottom: 1.5vh;
+    padding-left: 3vw;
     color: white;
     z-index: 3;
     font-family: a_AvanteLt_LightItalic;
